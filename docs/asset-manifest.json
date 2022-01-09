@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/EA-FX-Validator-site/static/css/main.fbfcb459.css",
+    "main.js": "/EA-FX-Validator-site/static/js/main.0757b0ba.js",
+    "static/js/787.d65ad6aa.chunk.js": "/EA-FX-Validator-site/static/js/787.d65ad6aa.chunk.js",
+    "index.html": "/EA-FX-Validator-site/index.html",
+    "main.fbfcb459.css.map": "/EA-FX-Validator-site/static/css/main.fbfcb459.css.map",
+    "main.0757b0ba.js.map": "/EA-FX-Validator-site/static/js/main.0757b0ba.js.map",
+    "787.d65ad6aa.chunk.js.map": "/EA-FX-Validator-site/static/js/787.d65ad6aa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbfcb459.css",
+    "static/js/main.0757b0ba.js"
+  ]
+}

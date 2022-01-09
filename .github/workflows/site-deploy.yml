@@ -1,0 +1,26 @@
+---
+name: Deploy site
+
+# yamllint disable-line rule:truthy
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm ci
+      - run: npm run build
+      - run: npm test
+      - name: Deploy site
+        run: >
+          npm run deploy
+          --
+          -r https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          -u "${GITHUB_ACTOR} <${GITHUB_ACTOR}@users.noreply.github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_DEBUG: gh-pages
