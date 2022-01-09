@@ -32,8 +32,10 @@
   },
   "devDependencies": {
     "ajv-cli": "^5.0.0",
+    "eslint-cli": "^1.1.1",
     "gh-pages": "^3.2.3",
     "husky": "^7.0.4",
+    "jest-cli": "^27.4.7",
     "npm-run-all": "^4.1.5",
     "pre-commit": "^1.2.2",
     "run": "^1.4.0"
@@ -59,7 +61,7 @@
     "build": "react-scripts build",
     "deploy": "gh-pages -b gh-pages -d docs -e docs -x",
     "eject": "react-scripts eject",
-    "lint:js": "eslint src/**/*.js",
+    "lint:js": "eslint --fix src/**/*.js",
     "pre-commit": "npm-run-all -p lint:js test",
     "start": "react-scripts start",
     "test": "react-scripts test"
