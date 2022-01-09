@@ -12,8 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm install
+      - run: npm ci
       - run: npm build
+      - run: npm test
       - name: Deploy site
         run: >
           npm run deploy
