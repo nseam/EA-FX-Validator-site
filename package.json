@@ -57,7 +57,7 @@
   },
   "scripts": {
     "build": "react-scripts build",
-    "deploy": "gh-pages -b gh-pages -d src -e docs",
+    "deploy": "gh-pages -b gh-pages -d src -e docs -x",
     "eject": "react-scripts eject",
     "lint:js": "eslint src/**/*.js",
     "pre-commit": "npm-run-all -p lint:js test",
