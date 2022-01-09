@@ -3,8 +3,9 @@ name: Deploy site
 
 # yamllint disable-line rule:truthy
 on:
-  pull_request:
   push:
+    branches:
+      - master
 
 jobs:
   Deploy:
