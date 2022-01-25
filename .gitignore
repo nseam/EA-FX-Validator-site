@@ -15,8 +15,10 @@
 # testing
 /coverage
 
-# production
+# Ignores build directory.
 /build
+/docs
+/out
 
 # misc
 .env.local
@@ -27,4 +29,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-/.next

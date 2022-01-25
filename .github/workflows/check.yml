@@ -4,7 +4,11 @@ name: Check
 # yamllint disable-line rule:truthy
 on:
   pull_request:
+    branches-ignore:
+      - gh-pages
   push:
+    branches-ignore:
+      - gh-pages
 
 jobs:
   Pre-commit:
