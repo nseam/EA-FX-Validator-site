@@ -1,9 +1,9 @@
 //import { render, screen } from '@testing-library/react';
 import { render } from '@testing-library/react';
-import App from './App';
+import Index from '../pages/index';
 
 test('renders footer', () => {
-  render(<App />);
+  render(<Index />);
   //const linkElement = screen.getByText(/footer/i);
   //expect(linkElement).toBeInTheDocument();
 });
