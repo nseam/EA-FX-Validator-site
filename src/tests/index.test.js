@@ -1,6 +1,6 @@
 //import { render, screen } from '@testing-library/react';
 import { render } from '@testing-library/react';
-import Index from './index';
+import Index from '../pages/index';
 
 test('renders footer', () => {
   render(<Index />);
