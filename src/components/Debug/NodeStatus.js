@@ -28,7 +28,8 @@ export default () => {
 
   if (error)
     return (
-      <div className={styles.NodeStatus}><span className="font-semibold">Cannot retrieve Node status. An error occured.</span>
+      <div className={styles.NodeStatus}>
+        <span className="font-semibold" style={{display:'none'}}>Cannot retrieve Node status. An error occured.</span>
       </div>);
 
   if (loading || !data)
