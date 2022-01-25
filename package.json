@@ -72,9 +72,9 @@
     "deploy": "gh-pages -b gh-pages -d docs -e docs -x",
     "dev": "next dev",
     "eject": "react-scripts eject",
+    "export": "next export -o docs",
     "lint:js": "eslint --fix src/**/*.js",
     "pre-commit": "npm-run-all -p lint:js test",
-    "prod": "NODE_ENV=prod next export -o docs",
     "start": "next start",
     "test": "react-scripts test --watchAll=false"
   },

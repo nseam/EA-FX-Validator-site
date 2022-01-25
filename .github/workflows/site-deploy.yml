@@ -16,6 +16,7 @@ jobs:
       - run: npm run build
         env:
           NODE_ENV: prod
+      - run: npm run export
       - run: npm test
       - name: Deploy site
         run: >

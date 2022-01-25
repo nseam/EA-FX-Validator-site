@@ -16,6 +16,7 @@
 /coverage
 
 # Ignores build directory.
+/build
 /docs
 /out
 
