@@ -1,4 +1,5 @@
+const isProd = process.env.NODE_ENV === 'prod'
 module.exports = {
-  basePath: '/EA-FX-Validator-site',
+  assetPrefix: isProd ? '/EA-FX-Validator-site' : '',
   distDir: 'build',
 }
