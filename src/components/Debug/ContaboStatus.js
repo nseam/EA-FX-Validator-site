@@ -1,4 +1,4 @@
-import './ContaboStatus.css';
+import styles from './ContaboStatus.module.css';
 import {useAxios} from "use-axios-client";
 import moment from "moment";
 
@@ -26,8 +26,13 @@ export default () => {
     url: "http://localhost:3005/contabo_status",
   });
 
-  if (!data || loading)
-    return 'Loading...';
+  if (error)
+    return (
+      <div className={styles.ContaboStatus}><span className="font-semibold">Cannot retrieve Contabo status. An error occured.</span>
+      </div>);
+
+  if (loading || !data)
+    return (<div className={styles.ContaboStatus}>Loading...</div>);
 
   const dateOptions = {
     year: "numeric",
@@ -36,7 +41,7 @@ export default () => {
   };
 
   return (
-    <div className="ContaboStatus">
+    <div className={styles.ContaboStatus}>
       <table>
         <thead>
         <tr>
