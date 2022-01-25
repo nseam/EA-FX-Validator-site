@@ -74,6 +74,7 @@
     "eject": "react-scripts eject",
     "lint:js": "eslint --fix src/**/*.js",
     "pre-commit": "npm-run-all -p lint:js test",
+    "prod": "NODE_ENV=prod next export -o docs",
     "start": "next start",
     "test": "react-scripts test --watchAll=false"
   },

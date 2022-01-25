@@ -17,6 +17,7 @@
 
 # Ignores build directory.
 /docs
+/out
 
 # misc
 .env.local
