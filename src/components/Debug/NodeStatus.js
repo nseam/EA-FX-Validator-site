@@ -1,4 +1,4 @@
-import './NodeStatus.css';
+import styles from './NodeStatus.module.css';
 import {useAxios} from "use-axios-client";
 import moment from "moment";
 
@@ -26,8 +26,13 @@ export default () => {
     url: "http://localhost:3005/node_status",
   });
 
-  if (!data || loading)
-    return 'Loading...';
+  if (error)
+    return (
+      <div className={styles.NodeStatus}><span className="font-semibold">Cannot retrieve Node status. An error occured.</span>
+      </div>);
+
+  if (loading || !data)
+    return (<div className={styles.NodeStatus}>Loading...</div>);
 
   const dateOptions = {
     year: "numeric",
@@ -36,7 +41,7 @@ export default () => {
   };
 
   return (
-    <div className="NodeStatus">
+    <div className={styles.NodeStatus}>
       <table>
         <thead>
         <tr>
