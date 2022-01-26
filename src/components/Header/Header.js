@@ -1,4 +1,8 @@
+import Config from 'next/config'
+import Link from 'next/link'
 import styles from "./Header.module.css";
+
+const { publicRuntimeConfig } = Config()
 
 export default () => {
   return (
@@ -24,15 +28,15 @@ export default () => {
           </div>
           <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
             <div className="text-xl lg:flex-grow">
-              <a href="/" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+              <Link href="/" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
                 Details
-              </a>
-              <a href="/stats" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+              </Link>
+              <Link href="/stats" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
                 Stats
-              </a>
-              <a href="projects" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+              </Link>
+              <Link href="/projects" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
                 Projects
-              </a>
+              </Link>
             </div>
           </div>
         </nav>
