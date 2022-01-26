@@ -69,7 +69,7 @@
   },
   "scripts": {
     "build": "next build",
-    "deploy": "gh-pages -b gh-pages -d docs -e docs -x",
+    "deploy": "gh-pages -b gh-pages -d docs -e docs -tx",
     "dev": "next dev",
     "eject": "react-scripts eject",
     "export": "next export -o docs",
