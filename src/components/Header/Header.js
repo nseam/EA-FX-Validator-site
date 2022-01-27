@@ -1,8 +1,5 @@
-import Config from 'next/config'
 import Link from 'next/link'
 import styles from "./Header.module.css";
-
-const { publicRuntimeConfig } = Config()
 
 export default () => {
   return (
