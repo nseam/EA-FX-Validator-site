@@ -9,9 +9,9 @@ export default () => {
   return (
     <div className={styles.Projects}>
       <iframe
-        src="https://ea31337.github.io/EA31337"
+        src="https://ea31337.github.io/"
         style={iframeStyle}
-        title="EA's Validator Projects"
+        title="EA31337 Projects"
       />
     </div>
   );
