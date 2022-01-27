@@ -13,12 +13,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm ci
-      - run: npm run build
+      - run: npm test
+      - run: npm run predeploy
         env:
           NODE_ENV: prod
-      - run: npm run export
-      - run: npm run nojekyll
-      - run: npm test
       - name: Deploy site
         run: >
           npm run deploy
