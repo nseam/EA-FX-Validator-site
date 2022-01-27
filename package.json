@@ -74,6 +74,7 @@
     "eject": "react-scripts eject",
     "export": "next export -o docs",
     "lint:js": "eslint --fix src/**/*.js",
+    "nojekyll": "cp -v ./src/.nojekyll ./docs/.nojekyll",
     "pre-commit": "npm-run-all -p lint:js test",
     "start": "next start",
     "test": "react-scripts test --watchAll=false"
