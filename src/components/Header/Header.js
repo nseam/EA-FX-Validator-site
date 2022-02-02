@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import styles from "./Header.module.css";
+import styles from "./Header.module.scss";
+import ActiveLink from "./ActiveLink";
 
 export default () => {
   return (
@@ -25,15 +26,15 @@ export default () => {
           </div>
           <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
             <div className="text-xl lg:flex-grow">
-              <Link href="/" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                Details
-              </Link>
-              <Link href="/stats" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                Stats
-              </Link>
-              <Link href="/projects" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
-                Projects
-              </Link>
+              <ActiveLink href="/" className="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white mr-4 cursor-pointer">
+                <a>Details</a>
+              </ActiveLink>
+              <ActiveLink href="/stats" className="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white mr-4 cursor-pointer">
+                <a>Stats</a>
+              </ActiveLink>
+              <ActiveLink href="/projects" className="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white cursor-pointer">
+                <a>Projects</a>
+              </ActiveLink>
             </div>
           </div>
         </nav>

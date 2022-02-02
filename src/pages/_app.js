@@ -1,4 +1,4 @@
-import '../styles/globals.css';
+import '../styles/globals.scss';
 
 import Footer from '../components/Footer/Footer.js';
 //import NodeStatus from "../components/Debug/NodeStatus";

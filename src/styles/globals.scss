@@ -49,3 +49,10 @@ code {
   display: flex;
   flex: 1;
 }
+
+a {
+  transition: color ease-in-out 0.1s;
+  &.active {
+     color: rgb(153 246 228);
+  }
+}
